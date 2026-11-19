@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using UTANI.Controllers;
 using UTANI.Models;
+using UTANI.Views;
 
 namespace UTANI
 {
     public partial class Form1 : Form
     {
-        private readonly usercontroller userController = new usercontroller();
+        private readonly UserController userController = new UserController();
 
         public Form1()
         {
@@ -51,7 +52,17 @@ namespace UTANI
                 if (user != null)
                 {
                     MessageBox.Show("Login berhasil. Selamat datang, " + user.nama + " (" + user.role + ")");
-                    // TODO: buka form dashboard sesuai role, lalu this.Hide();
+
+                    //FormAkun formAkun = new FormAkun();
+                    //formAkun.FormClosed += (s, args) =>
+                    //{
+                    //    userController.Logout();
+                    //    tbPassword.Clear();
+                    //    this.Show();
+                    //};
+
+                    //formAkun.Show();
+                    //this.Hide();
                 }
                 else
                 {

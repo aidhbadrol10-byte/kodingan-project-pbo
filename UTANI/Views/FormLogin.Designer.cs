@@ -63,11 +63,11 @@
             this.btLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btLogin.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogin.ForeColor = System.Drawing.Color.White;
-            this.btLogin.Location = new System.Drawing.Point(1253, 812);
+            this.btLogin.Location = new System.Drawing.Point(1228, 797);
             this.btLogin.Name = "btLogin";
-            this.btLogin.Size = new System.Drawing.Size(256, 55);
+            this.btLogin.Size = new System.Drawing.Size(306, 84);
             this.btLogin.TabIndex = 2;
-            this.btLogin.Text = "masuk";
+            this.btLogin.Text = "Masuk";
             this.btLogin.UseVisualStyleBackColor = false;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
@@ -75,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btLogin);
