@@ -53,16 +53,16 @@ namespace UTANI
                 {
                     MessageBox.Show("Login berhasil. Selamat datang, " + user.nama + " (" + user.role + ")");
 
-                    //FormAkun formAkun = new FormAkun();
-                    //formAkun.FormClosed += (s, args) =>
-                    //{
-                    //    userController.Logout();
-                    //    tbPassword.Clear();
-                    //    this.Show();
-                    //};
+                    FormDashboard formDashboard = new FormDashboard();
+                    formDashboard.FormClosed += (s, args) =>
+                    {
+                        userController.Logout();
+                        tbPassword.Clear();
+                        this.Show();
+                    };
 
-                    //formAkun.Show();
-                    //this.Hide();
+                    formDashboard.Show();
+                    this.Hide();
                 }
                 else
                 {
