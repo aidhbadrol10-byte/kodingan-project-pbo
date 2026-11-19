@@ -37,11 +37,12 @@ namespace UTANI
         private void btLogin_Click(object sender, EventArgs e)
         {
             string nama = tbUsername.Text.Trim();
-            string password = tbPassword.Text; 
+            string password = tbPassword.Text;
 
             if (nama == "" || password == "")
             {
-                MessageBox.Show("Email dan password wajib diisi");
+                MessageBox.Show("Username dan password wajib diisi.", "Peringatan",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -51,27 +52,33 @@ namespace UTANI
 
                 if (user != null)
                 {
-                    MessageBox.Show("Login berhasil. Selamat datang, " + user.nama + " (" + user.role + ")");
+                    MessageBox.Show("Login berhasil. Selamat datang, " + user.nama + " (" + user.role + ")",
+                        "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    FormDashboard formDashboard = new FormDashboard();
-                    formDashboard.FormClosed += (s, args) =>
+                    FormAkun formAkun = new FormAkun();
+                    formAkun.FormClosed += (s, args) =>
                     {
-                        userController.Logout();
-                        tbPassword.Clear();
-                        this.Show();
+                        
+                        if (!SideBar.IsNavigating)
+                        {
+                            Application.Exit();
+                        }
                     };
 
-                    formDashboard.Show();
+                    tbPassword.Clear();
+                    formAkun.Show();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Email atau password salah");
+                    MessageBox.Show("Username atau password salah.", "Login Gagal",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Gagal terhubung ke database: " + ex.Message);
+                MessageBox.Show("Gagal terhubung ke database: " + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -33,12 +33,24 @@ namespace UTANI.Views
                 }
             };
 
+            
+            if (formAktif != null)
+            {
+                formTujuan.StartPosition = FormStartPosition.Manual;
+                formTujuan.Location = formAktif.Location;
+                formTujuan.Size = formAktif.Size;
+            }
+
             formTujuan.Show();
 
             if (formAktif != null)
             {
                 formAktif.Close();
             }
+
+
+            formTujuan.BringToFront();
+            formTujuan.Activate();
 
             IsNavigating = false;
         }

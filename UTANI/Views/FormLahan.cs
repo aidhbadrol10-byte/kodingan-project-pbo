@@ -16,5 +16,30 @@ namespace UTANI.Views
         {
             InitializeComponent();
         }
+
+        private void tbNamaLahan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSimpanLahan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbKeterangan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lokasi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormLahan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
