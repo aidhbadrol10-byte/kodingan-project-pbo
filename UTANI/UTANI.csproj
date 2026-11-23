@@ -117,10 +117,40 @@
     <Compile Include="Repositories\PanenPenjualan.cs" />
     <Compile Include="Repositories\Pengguna.cs" />
     <Compile Include="Repositories\Periode.cs" />
-    <Compile Include="Views\FormAkun.cs">
+    <Compile Include="Views\Buruh Tani\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormAkun.Designer.cs">
+    <Compile Include="Views\Buruh Tani\FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Buruh Tani\FormLahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Buruh Tani\FormLahan.Designer.cs">
+      <DependentUpon>FormLahan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Buruh Tani\FormPanen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Buruh Tani\FormPanen.Designer.cs">
+      <DependentUpon>FormPanen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Buruh Tani\FormPeriodeTanam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Buruh Tani\FormPeriodeTanam.Designer.cs">
+      <DependentUpon>FormPeriodeTanam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Buruh Tani\FormProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Buruh Tani\FormProfil.Designer.cs">
+      <DependentUpon>FormProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Petani\FormAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Petani\FormAkun.Designer.cs">
       <DependentUpon>FormAkun.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FormLogin.cs">
@@ -131,35 +161,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\FormBiaya.cs">
+    <Compile Include="Views\Petani\FormBiaya.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormBiaya.Designer.cs">
+    <Compile Include="Views\Petani\FormBiaya.Designer.cs">
       <DependentUpon>FormBiaya.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FormDashboard.cs">
+    <Compile Include="Views\Petani\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormDashboard.Designer.cs">
+    <Compile Include="Views\Petani\FormDashboard.Designer.cs">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FormLahan.cs">
+    <Compile Include="Views\Petani\FormLahan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormLahan.Designer.cs">
+    <Compile Include="Views\Petani\FormLahan.Designer.cs">
       <DependentUpon>FormLahan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FormPeriode.cs">
+    <Compile Include="Views\Petani\FormPanen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormPeriode.Designer.cs">
-      <DependentUpon>FormPeriode.cs</DependentUpon>
+    <Compile Include="Views\Petani\FormPanen.Designer.cs">
+      <DependentUpon>FormPanen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\PanenPenjualan.cs">
+    <Compile Include="Views\Petani\FormPenjualan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\PanenPenjualan.Designer.cs">
-      <DependentUpon>PanenPenjualan.cs</DependentUpon>
+    <Compile Include="Views\Petani\FormPenjualan.Designer.cs">
+      <DependentUpon>FormPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Petani\FormPeriodeTanam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Petani\FormPeriodeTanam.Designer.cs">
+      <DependentUpon>FormPeriodeTanam.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SideBar.cs">
       <SubType>UserControl</SubType>
@@ -176,14 +212,44 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\FormAkun.resx">
+    <EmbeddedResource Include="Views\Buruh Tani\FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Buruh Tani\FormLahan.resx">
+      <DependentUpon>FormLahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Buruh Tani\FormPanen.resx">
+      <DependentUpon>FormPanen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Buruh Tani\FormPeriodeTanam.resx">
+      <DependentUpon>FormPeriodeTanam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Buruh Tani\FormProfil.resx">
+      <DependentUpon>FormProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Petani\FormAkun.resx">
       <DependentUpon>FormAkun.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormDashboard.resx">
+    <EmbeddedResource Include="Views\Petani\FormBiaya.resx">
+      <DependentUpon>FormBiaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Petani\FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Petani\FormLahan.resx">
+      <DependentUpon>FormLahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Petani\FormPanen.resx">
+      <DependentUpon>FormPanen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Petani\FormPenjualan.resx">
+      <DependentUpon>FormPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Petani\FormPeriodeTanam.resx">
+      <DependentUpon>FormPeriodeTanam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SideBar.resx">
       <DependentUpon>SideBar.cs</DependentUpon>
@@ -195,7 +261,7 @@
     </None>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
+      <DependentAutoGen>Settings.settings</DependentAutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>

@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UTANI.Views
+namespace UTANI.Views.Buruh_Tani
 {
-    public partial class FormBiaya : Form
+    public partial class FormDashboard : Form
     {
-        public FormBiaya()
+        public FormDashboard()
         {
             InitializeComponent();
+        }
+
+        private void FormDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sideBar1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

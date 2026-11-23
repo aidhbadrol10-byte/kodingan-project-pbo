@@ -4,69 +4,66 @@ namespace UTANI.Models
 {
     public class Lahan
     {
-        private int id_lahan;
-        private string nama_lahan;
-        private decimal luas_lahan;
-        private string lokasi;
-        private string keterangan;
+        private int _id_lahan;
+        private string _nama_lahan;
+        private double _luas_lahan;
+        private string _lokasi;
+        private string _keterangan;
 
-        public int IdLahan
+        public int id_lahan
         {
-            get { return id_lahan; }
-            set { id_lahan = value; }
+            get { return _id_lahan; }
+            set { _id_lahan = value; }
         }
 
-        public string NamaLahan
+        public string nama_lahan
         {
-            get { return nama_lahan; }
+            get { return _nama_lahan; }
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
-                    throw new ArgumentException("Nama lahan tidak boleh kosong.");
-                nama_lahan = value;
+                    throw new ArgumentException("Nama lahan dan komoditas wajib diisi.");
+                _nama_lahan = value.Trim();
             }
         }
 
-      
-        public decimal LuasLahan
+        public double luas_lahan
         {
-            get { return luas_lahan; }
+            get { return _luas_lahan; }
             set
             {
                 if (value <= 0)
-                    throw new ArgumentException("Luas lahan harus lebih dari 0.");
-                luas_lahan = value;
+                    throw new ArgumentException("Luas lahan harus lebih dari 0 hektar.");
+                _luas_lahan = value;
             }
         }
 
-        public string Lokasi
+        public string lokasi
         {
-            get { return lokasi; }
-            set { lokasi = value; }
+            get { return _lokasi; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("Lokasi lahan wajib diisi.");
+                _lokasi = value.Trim();
+            }
         }
 
-        public string Keterangan
+        public string keterangan
         {
-            get { return keterangan; }
-            set { keterangan = value; }
+            get { return _keterangan; }
+            set { _keterangan = value != null ? value.Trim() : ""; }
         }
 
-        public Lahan()
-        {
-        }
+        public Lahan() { }
 
-        public Lahan(int id_lahan, string nama_lahan, decimal luas_lahan, string lokasi, string keterangan)
+        public Lahan(int id_lahan, string nama_lahan, double luas_lahan, string lokasi, string keterangan)
         {
-            IdLahan = id_lahan;
-            NamaLahan = nama_lahan;
-            LuasLahan = luas_lahan;
-            Lokasi = lokasi;
-            Keterangan = keterangan;
-        }
-
-        public Lahan(string nama_lahan, decimal luas_lahan, string lokasi, string keterangan)
-            : this(0, nama_lahan, luas_lahan, lokasi, keterangan)
-        {
+            this.id_lahan = id_lahan;
+            this.nama_lahan = nama_lahan;
+            this.luas_lahan = luas_lahan;
+            this.lokasi = lokasi;
+            this.keterangan = keterangan;
         }
     }
 }

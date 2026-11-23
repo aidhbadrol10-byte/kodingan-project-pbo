@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using UTANI.Controllers;
 using UTANI.Models;
 
-namespace UTANI.Views
+namespace UTANI.Views.Petani
 {
     public partial class FormAkun : Form
     {
@@ -300,6 +300,11 @@ namespace UTANI.Views
         }
 
         private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void sideBar1_Load(object sender, EventArgs e)
         {
 
         }

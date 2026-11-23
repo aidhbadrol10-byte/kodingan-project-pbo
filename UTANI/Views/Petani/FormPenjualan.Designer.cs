@@ -1,6 +1,6 @@
-﻿namespace UTANI.Views
+﻿namespace UTANI.Views.Petani
 {
-    partial class FormDashboard
+    partial class FormPenjualan
     {
         /// <summary>
         /// Required designer variable.
@@ -28,27 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPenjualan));
             this.sideBar1 = new UTANI.Views.SideBar();
             this.SuspendLayout();
             // 
             // sideBar1
             // 
             this.sideBar1.BackColor = System.Drawing.Color.Transparent;
-            this.sideBar1.Location = new System.Drawing.Point(-1, 291);
+            this.sideBar1.Location = new System.Drawing.Point(0, 286);
             this.sideBar1.Name = "sideBar1";
             this.sideBar1.Size = new System.Drawing.Size(457, 756);
             this.sideBar1.TabIndex = 0;
             // 
-            // FormDashboard
+            // FormPenjualan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.sideBar1);
-            this.Name = "FormDashboard";
-            this.Text = "FormDashboard";
+            this.Name = "FormPenjualan";
+            this.Text = "FormPenjualan";
+            this.Load += new System.EventHandler(this.FormPenjualan_Load);
             this.ResumeLayout(false);
 
         }

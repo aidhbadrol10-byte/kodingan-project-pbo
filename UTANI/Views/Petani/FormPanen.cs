@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UTANI.Views
+namespace UTANI.Views.Petani
 {
-    public partial class FormDashboard : Form
+    public partial class FormPanen : Form
     {
-        public FormDashboard()
+        public FormPanen()
         {
             InitializeComponent();
+        }
+
+        private void FormPanen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sideBar1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

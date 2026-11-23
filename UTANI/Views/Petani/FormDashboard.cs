@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UTANI.Views
+namespace UTANI.Views.Petani
 {
-    public partial class PanenPenjualan : Form
+    public partial class FormDashboard : Form
     {
-        public PanenPenjualan()
+        public FormDashboard()
         {
             InitializeComponent();
+        }
+
+        private void FormDashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

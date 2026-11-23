@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using UTANI.Controllers;
 using UTANI.Models;
@@ -55,10 +48,18 @@ namespace UTANI
                     MessageBox.Show("Login berhasil. Selamat datang, " + user.nama + " (" + user.role + ")",
                         "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    FormAkun formAkun = new FormAkun();
-                    formAkun.FormClosed += (s, args) =>
+                    Form formDashboard;
+                    if (user.role == "buruh_tani")
                     {
-                        
+                        formDashboard = new UTANI.Views.Buruh_Tani.FormDashboard();
+                    }
+                    else
+                    {
+                        formDashboard = new UTANI.Views.Petani.FormDashboard();
+                    }
+
+                    formDashboard.FormClosed += (s, args) =>
+                    {
                         if (!SideBar.IsNavigating)
                         {
                             Application.Exit();
@@ -66,7 +67,7 @@ namespace UTANI
                     };
 
                     tbPassword.Clear();
-                    formAkun.Show();
+                    formDashboard.Show();
                     this.Hide();
                 }
                 else

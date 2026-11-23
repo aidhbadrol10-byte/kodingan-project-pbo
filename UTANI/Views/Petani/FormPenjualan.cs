@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UTANI.Views
+namespace UTANI.Views.Petani
 {
-    public partial class FormPeriode : Form
+    public partial class FormPenjualan : Form
     {
-        public FormPeriode()
+        public FormPenjualan()
         {
             InitializeComponent();
+        }
+
+        private void FormPenjualan_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sideBar1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
