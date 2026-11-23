@@ -18,7 +18,7 @@ namespace UTANI.Databases
             string port = "5432";
             string database = "UTANI";
             string username = "postgres";
-            string password = "1234";
+            string password = "Cuplis1.";
 
             connectionString = $"Host={host};Port={port};Database={database};Username={username};Password={password}";
         }

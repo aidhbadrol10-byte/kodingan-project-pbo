@@ -52,7 +52,7 @@ namespace UTANI.Views.Petani
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 26);
             // 
             // tbUsernameAkun
             // 
@@ -78,14 +78,15 @@ namespace UTANI.Views.Petani
             // 
             // btSimpanAkun
             // 
-            this.btSimpanAkun.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btSimpanAkun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(81)))));
             this.btSimpanAkun.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.btSimpanAkun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btSimpanAkun.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSimpanAkun.FlatAppearance.BorderSize = 0;
+            this.btSimpanAkun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSimpanAkun.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSimpanAkun.ForeColor = System.Drawing.Color.White;
-            this.btSimpanAkun.Location = new System.Drawing.Point(1635, 922);
+            this.btSimpanAkun.Location = new System.Drawing.Point(1660, 931);
             this.btSimpanAkun.Name = "btSimpanAkun";
-            this.btSimpanAkun.Size = new System.Drawing.Size(193, 70);
+            this.btSimpanAkun.Size = new System.Drawing.Size(157, 53);
             this.btSimpanAkun.TabIndex = 3;
             this.btSimpanAkun.Text = "Simpan";
             this.btSimpanAkun.UseVisualStyleBackColor = false;
@@ -115,13 +116,14 @@ namespace UTANI.Views.Petani
             // 
             // btHapusAkun
             // 
-            this.btHapusAkun.BackColor = System.Drawing.Color.Brown;
-            this.btHapusAkun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btHapusAkun.Font = new System.Drawing.Font("Tahoma", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHapusAkun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(34)))), ((int)(((byte)(31)))));
+            this.btHapusAkun.FlatAppearance.BorderSize = 0;
+            this.btHapusAkun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btHapusAkun.Font = new System.Drawing.Font("Tahoma", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btHapusAkun.ForeColor = System.Drawing.Color.White;
-            this.btHapusAkun.Location = new System.Drawing.Point(1055, 920);
+            this.btHapusAkun.Location = new System.Drawing.Point(1044, 929);
             this.btHapusAkun.Name = "btHapusAkun";
-            this.btHapusAkun.Size = new System.Drawing.Size(200, 70);
+            this.btHapusAkun.Size = new System.Drawing.Size(158, 56);
             this.btHapusAkun.TabIndex = 9;
             this.btHapusAkun.Text = "Hapus";
             this.btHapusAkun.UseVisualStyleBackColor = false;
@@ -129,15 +131,16 @@ namespace UTANI.Views.Petani
             // 
             // btEditAkun
             // 
-            this.btEditAkun.BackColor = System.Drawing.Color.DarkCyan;
-            this.btEditAkun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btEditAkun.Font = new System.Drawing.Font("Tahoma", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEditAkun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btEditAkun.FlatAppearance.BorderSize = 0;
+            this.btEditAkun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEditAkun.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEditAkun.ForeColor = System.Drawing.Color.White;
-            this.btEditAkun.Location = new System.Drawing.Point(825, 919);
+            this.btEditAkun.Location = new System.Drawing.Point(624, 930);
             this.btEditAkun.Name = "btEditAkun";
-            this.btEditAkun.Size = new System.Drawing.Size(200, 70);
+            this.btEditAkun.Size = new System.Drawing.Size(139, 53);
             this.btEditAkun.TabIndex = 10;
-            this.btEditAkun.Text = "Edit";
+            this.btEditAkun.Text = "Ubah";
             this.btEditAkun.UseVisualStyleBackColor = false;
             this.btEditAkun.Click += new System.EventHandler(this.btEditAkun_Click);
             // 
